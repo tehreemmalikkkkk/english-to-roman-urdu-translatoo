@@ -2,7 +2,7 @@ import streamlit as st
 from transformers import pipeline
 
 # Load the translation pipeline from Hugging Face
-model_name = "your-username/english-to-roman-urdu"
+model_name = "your-username/english-to-roman-urdu"  # Replace with the actual model name
 translator = pipeline("translation", model=model_name)
 
 # Streamlit app
@@ -19,4 +19,6 @@ if st.button("Translate"):
     else:
         st.warning("Please enter some text to translate.")
 
-# Run the app using: streamlit run app.py
+# Note: Run the app using: streamlit run app.py
+
+
